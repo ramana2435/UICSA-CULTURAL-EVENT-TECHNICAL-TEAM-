@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guru Nanak University Hyderabad Cultural Day 2026 - Celebrating Talent, Tradition & Togetherness on 15 October 2026">
+    <meta name="keywords" content="Guru Nanak University, Cultural Day, Hyderabad, 2026, College Events, Student Performances">
+    <meta name="theme-color" content="#1a237e">
+    <title>Cultural Day 2026 | Guru Nanak University Hyderabad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Welcome Audio Button (Optional) -->
+    <button id="welcomeAudioBtn" class="welcome-audio-btn" aria-label="Play welcome message">
+        🔊 PLAY WELCOME MESSAGE
+    </button>
+
+    <!-- Background Music Control -->
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle background music">
+        🎵 PLAY MUSIC
+    </button>
+
+    <!-- Audio Elements -->
+    <audio id="welcomeAudio" preload="none">
+        <source src="assets/music/welcome.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bgMusic" loop preload="none">
+        <source src="assets/music/cultural-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-particles"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="assets/images/university-logo.png" alt="Guru Nanak University Logo" class="university-logo" onerror="this.style.display='none'">
+            </div>
+            <h1 class="hero-university">GURU NANAK UNIVERSITY</h1>
+            <p class="hero-location">HYDERABAD</p>
+            <div class="hero-divider"></div>
+            <h2 class="hero-title">✨ CULTURAL DAY 2026 ✨</h2>
+            <p class="hero-organizer">Organizing by <span class="uicsa-highlight"></span>UICSA</span> Branch</p>
+            <p class="hero-tagline">"Celebrating Talent, Tradition & Togetherness"</p>
+            <div class="hero-date">
+                <span class="date-label">Date:</span>
+                <span class="date-value" id="heroDate">15 OCTOBER 2026</span>
+            </div>
+            <button class="hero-cta" onclick="scrollToMain()" aria-label="Explore Cultural Day">
+                ✨ EXPLORE CULTURAL DAY
+            </button>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/cultural-logo.png" alt="Cultural Day Logo" class="nav-logo" onerror="this.style.display='none'">
+                <span class="nav-title">Cultural Day 2026</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#memories">Campus</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#talent">Talent</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        
+        <!-- Countdown Section -->
+        <section id="countdown" class="countdown-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>THE CELEBRATION BEGINS IN</h2>
+                <div class="countdown-container" id="countdownContainer">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">DAYS</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">HOURS</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">MINUTES</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">SECONDS</div>
+                    </div>
+                </div>
+                <div class="countdown-message" id="countdownMessage"></div>
+            </div>
+        </section>
+
+        <!-- About Cultural Day -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>ABOUT CULTURAL DAY</h2>
+                <div class="about-content">
+                    <div class="about-text" data-reveal>
+                        <p>Cultural Day is a vibrant celebration that brings together the entire Guru Nanak University community to showcase the rich tapestry of talent, tradition, and creativity that defines our campus.</p>
+                        <p>This special event provides students with an extraordinary opportunity to:</p>
+                        <ul class="about-list">
+                            <li>✨ Showcase their unique talents and abilities</li>
+                            <li>🎭 Celebrate diverse cultures and traditions</li>
+                            <li>🎵 Enjoy captivating music and dance performances</li>
+                            <li>🎤 Participate in live cultural performances</li>
+                            <li>🤝 Connect with fellow students and build lasting memories</li>
+                            <li>🌈 Celebrate diversity and creative expression</li>
+                            <li>📸 Create unforgettable college experiences</li>
+                        </ul>
+                        <p>Join us as we transform our campus into a spectacular celebration of art, culture, and togetherness!</p>
+                    </div>
+                    <div class="about-image" data-reveal>
+                        <img src="assets/images/campus1.jpg" alt="Guru Nanak University Campus Cultural Event" onerror="this.parentElement.style.display='none'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Day Highlights -->
+        <section id="highlights" class="highlights-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>CULTURAL DAY HIGHLIGHTS</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🎵</div>
+                        <h3>MUSIC</h3>
+                        <p>Melodious performances that touch the soul</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">💃</div>
+                        <h3>DANCE</h3>
+                        <p>Graceful movements celebrating culture</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🎭</div>
+                        <h3>DRAMA</h3>
+                        <p>Captivating theatrical performances</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🎤</div>
+                        <h3>SINGING</h3>
+                        <p>Voices that inspire and entertain</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🎨</div>
+                        <h3>ART & CREATIVITY</h3>
+                        <p>Visual expressions of imagination</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">👗</div>
+                        <h3>TRADITIONAL ATTIRE</h3>
+                        <p>Showcasing cultural heritage through fashion</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🎉</div>
+                        <h3>CULTURAL PERFORMANCES</h3>
+                        <p>Diverse acts celebrating traditions</p>
+                    </div>
+                    <div class="highlight-card" data-reveal>
+                        <div class="highlight-icon">🏆</div>
+                        <h3>STUDENT TALENT</h3>
+                        <p>Recognizing excellence and creativity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Schedule -->
+        <section id="schedule" class="schedule-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>EVENT SCHEDULE</h2>
+                <p class="schedule-note" data-reveal>* Schedule is subject to updates. Please check back for final timings.</p>
+                <div class="timeline">
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">09:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Opening Ceremony</h3>
+                            <p>Grand inauguration of Cultural Day 2026</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">10:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Cultural Performances</h3>
+                            <p>Traditional dance and music presentations</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">12:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Music & Dance</h3>
+                            <p>Live performances by talented students</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">02:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Student Activities</h3>
+                            <p>Interactive cultural activities and competitions</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">04:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Special Performances</h3>
+                            <p>Featured acts and surprise performances</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-time">06:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Closing Ceremony</h3>
+                            <p>Awards and memorable conclusion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Photo Gallery -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>🎬 CULTURAL PHOTO GALLERY</h2>
+                <p class="gallery-subtitle" data-reveal>Capturing moments of celebration and togetherness</p>
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery images will be loaded dynamically -->
+                    <!-- Placeholder if no images -->
+                    <div class="gallery-placeholder">
+                        <p>📸 Gallery photos will be added soon!</p>
+                        <p class="placeholder-note">Place your cultural event photos in: <code>assets/gallery/</code></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+
+        <!-- Campus Memories -->
+        <section id="memories" class="memories-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>OUR CAMPUS • OUR MEMORIES</h2>
+                <div class="memories-grid">
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/campus1.jpg" alt="Guru Nanak University Campus Life" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">Campus Life</div>
+                    </div>
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/campus2.jpg" alt="Student Activities at Guru Nanak University" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">Student Activities</div>
+                    </div>
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/cultural1.jpg" alt="Cultural Events at Guru Nanak University" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">Cultural Events</div>
+                    </div>
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/cultural2.jpg" alt="College Celebrations" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">College Celebrations</div>
+                    </div>
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/performance1.jpg" alt="Student Performances" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">Student Performances</div>
+                    </div>
+                    <div class="memory-card" data-reveal>
+                        <img src="assets/images/performance2.jpg" alt="Cultural Day Moments" loading="lazy" onerror="this.parentElement.style.display='none'">
+                        <div class="memory-caption">Cultural Day Moments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="videos" class="videos-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>🎬 CULTURAL MOMENTS</h2>
+                <div class="videos-container" id="videosContainer">
+                    <!-- Videos will be loaded dynamically if available -->
+                    <div class="videos-placeholder">
+                        <p>🎥 Cultural videos will be added soon!</p>
+                        <p class="placeholder-note">Place your event videos in: <code>assets/videos/</code></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Quotes -->
+        <section id="quotes" class="quotes-section">
+            <div class="container">
+                <div class="quotes-carousel">
+                    <button class="quote-nav quote-prev" id="quotePrev" aria-label="Previous quote">&#10094;</button>
+                    <div class="quote-content">
+                        <div class="quote-icon">❝</div>
+                        <p class="quote-text" id="quoteText">Culture is the thread that connects us.</p>
+                        <div class="quote-dots" id="quoteDots"></div>
+                    </div>
+                    <button class="quote-nav quote-next" id="quoteNext" aria-label="Next quote">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Talent Section -->
+        <section id="talent" class="talent-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>CELEBRATING OUR TALENTS</h2>
+                <div class="talent-grid">
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">🎤</div>
+                        <h3>Singers</h3>
+                        <p>Melodious voices that captivate audiences</p>
+                    </div>
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">💃</div>
+                        <h3>Dancers</h3>
+                        <p>Graceful performers bringing stories to life</p>
+                    </div>
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">🎭</div>
+                        <h3>Performers</h3>
+                        <p>Talented artists showcasing dramatic excellence</p>
+                    </div>
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">🎨</div>
+                        <h3>Artists</h3>
+                        <p>Creative minds expressing through visual arts</p>
+                    </div>
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">🎧</div>
+                        <h3>Musicians</h3>
+                        <p>Skilled instrumentalists creating magic</p>
+                    </div>
+                    <div class="talent-card" data-reveal>
+                        <div class="talent-icon">🎙️</div>
+                        <h3>Hosts</h3>
+                        <p>Charismatic anchors guiding the celebration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tradition & Culture Section -->
+        <section id="tradition" class="tradition-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>TRADITION & CULTURE</h2>
+                <div class="tradition-content" data-reveal>
+                    <div class="tradition-pattern"></div>
+                    <p>Cultural Day brings students together to appreciate and celebrate the beautiful diversity that makes our university special. Through this celebration, we honor:</p>
+                    <div class="tradition-items">
+                        <div class="tradition-item">🪔 Indian Traditions</div>
+                        <div class="tradition-item">🌏 Regional Cultures</div>
+                        <div class="tradition-item">🎵 Music</div>
+                        <div class="tradition-item">💃 Dance</div>
+                        <div class="tradition-item">🎨 Art</div>
+                        <div class="tradition-item">✨ Creativity</div>
+                        <div class="tradition-item">🌈 Diversity</div>
+                        <div class="tradition-item">🤝 Unity</div>
+                    </div>
+                    <p class="tradition-quote">"Unity in diversity is our greatest strength"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Participation CTA -->
+        <section id="participate" class="participate-section">
+            <div class="container">
+                <div class="participate-content" data-reveal>
+                    <h2>READY TO CELEBRATE?</h2>
+                    <p>Join us as we celebrate talent, culture, creativity and the spirit of togetherness.</p>
+                    <button class="participate-btn" onclick="scrollToSection('about')">
+                        🎉 CELEBRATE WITH US
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grand Finale -->
+        <section id="finale" class="finale-section">
+            <div class="finale-pattern"></div>
+            <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+            <div class="container">
+                <div class="finale-content" data-reveal>
+                    <h2 class="finale-heading">LET THE CELEBRATION BEGIN</h2>
+                    <div class="finale-details">
+                        <p class="finale-university">GURU NANAK UNIVERSITY</p>
+                        <p class="finale-location">HYDERABAD</p>
+                        <p class="finale-event">CULTURAL DAY 2026</p>
+                        <p class="finale-organizer">Organizing by <span class="uicsa-highlight"></span>UICSA</span> Branch</p>
+                        <p class="finale-date" id="finaleDate">15 OCTOBER 2026</p>
+                    </div>
+                    <div class="finale-message">
+                        <p>Celebrate your culture.</p>
+                        <p>Celebrate your talent.</p>
+                        <p>Celebrate together.</p>
+                    </div>
+                    <button class="finale-btn" id="finaleBtn" onclick="launchConfetti()">
+                        🎉 CELEBRATE CULTURAL DAY
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/university-logo.png" alt="Guru Nanak University Logo" onerror="this.style.display='none'">
+                </div>
+                <div class="footer-info">
+                    <h3>GURU NANAK UNIVERSITY</h3>
+                    <p>HYDERABAD</p>
+                    <p class="footer-event">CULTURAL DAY 2026</p>
+                    <p class="footer-organizer">Organizing by <span class="uicsa-highlight"></span>UICSA</span> Branch</p>
+                    <p class="footer-date" id="footerDate">15 OCTOBER 2026</p>
+                    <p class="footer-tagline">"Celebrating Talent • Tradition • Togetherness"</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#schedule">Schedule</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#videos">Videos</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Nanak University Cultural Day. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
